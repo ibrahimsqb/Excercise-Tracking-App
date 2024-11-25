@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+:root{
+  --primary: #ff0000; /* Red */
+  --error: #e7195a;
+}
+body{
+  background: #000000; /* Black */
+  margin: 0;
+  font-family: "Poppins";
+  color: #ffffff; /* White text for contrast */
+}
+header{
+  background: #000000; /* Black */
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a{
+  color: #ff0000; /* Red */
+  text-decoration: none;
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/*homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+.workout-details{
+  background: #333333; /* Dark grey for contrast */
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(255,0,0,0.2); /* Slight red shadow */
+}
+.workout-details h4{
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary); /* Red */
+}
+.workout-details p{
+  margin: 0;
+  font-size: 0.9em;
+  color: #bbbbbb; /* Light grey */
+}
+.workout-details span{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #ff0000; /* Red */
+  padding: 6px;
+  border-radius: 50%;
+  color: #ffffff; /* White */
+}
+
+/*workout Form*/
+label, input{
+  display: block;
+  color: #ffffff; /* White text */
+}
+input{
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #555555; /* Dark grey */
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #222222; /* Dark grey */
+  color: #ffffff; /* White text */
+}
+form button{
+  background: var(--primary); /* Red */
+  border: 0;
+  color: #ffffff; /* White */
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error{
+  border: 1px solid var(--error)
+}
